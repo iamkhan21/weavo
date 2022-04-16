@@ -1,3 +1,7 @@
+<script>
+import WeatherFetcher from '../main/WeatherFetcher.svelte';
+</script>
+
 <main class="p-5">
-	<p>fgsdfg</p>
+	<WeatherFetcher />
 </main>
