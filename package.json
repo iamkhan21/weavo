@@ -1,0 +1,36 @@
+{
+	"name": "weavo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"update:deps": "pnpm up -r -i -L && pnpm i",
+		"update:cssdb": "npx browserslist@latest --update-db"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "1.0.0-next.41",
+		"@tsconfig/svelte": "3.0.0",
+		"autoprefixer": "10.4.4",
+		"open-props": "1.3.16",
+		"postcss": "8.4.12",
+		"postcss-import": "14.1.0",
+		"postcss-jit-props": "1.0.6",
+		"postcss-load-config": "3.1.4",
+		"postcss-nested": "5.0.6",
+		"postcss-preset-env": "7.4.3",
+		"prettier": "2.6.2",
+		"prettier-plugin-svelte": "2.7.0",
+		"svelte": "3.47.0",
+		"svelte-check": "2.7.0",
+		"svelte-preprocess": "4.10.6",
+		"tslib": "2.3.1",
+		"typescript": "4.6.3",
+		"unocss": "0.31.3",
+		"vite": "2.9.5",
+		"vite-plugin-pwa": "0.11.13"
+	}
+}
