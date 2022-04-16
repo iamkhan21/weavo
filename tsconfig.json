@@ -13,7 +13,7 @@
 			"@/*": ["src/*"],
 			"@tests/*": ["tests/*"],
 			"@assets/*": ["src/_assets/*"],
-			"@domain/*": ["src/domain/*"],
+			"@domains/*": ["src/domains/*"],
 			"@application/*": ["src/application/*"],
 			"@services/*": ["src/services/*"],
 			"@stores/*": ["src/stores/*"],

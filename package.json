@@ -11,6 +11,10 @@
     "update:deps": "pnpm up -r -i -L && pnpm i",
     "update:cssdb": "npx browserslist@latest --update-db"
   },
+  "dependencies": {
+    "await-of": "3.1.1",
+    "wretch": "1.7.9"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "1.0.0-next.41",
     "@tsconfig/svelte": "3.0.0",
@@ -36,8 +40,5 @@
   },
   "msw": {
     "workerDirectory": "public"
-  },
-  "dependencies": {
-    "wretch": "1.7.9"
   }
 }

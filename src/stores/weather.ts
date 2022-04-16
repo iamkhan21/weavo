@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import type { Weather } from '@domain/weather';
+import type { Weather } from '@/domains/weather';
 
 export const weather = writable<Weather>(null);
 export const weatherLoading = writable(false);

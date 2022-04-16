@@ -1,6 +1,6 @@
 <script>
-import { getTemperature } from '@domain/weather';
-import { weather } from '@stores/weather';
+import { getTemperature } from '@/domains/weather';
+import { weather }        from '@stores/weather';
 </script>
 
 <section>

@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import type { LocationInfo } from '@domain/location';
+import type { LocationInfo } from '@/domains/location';
 
 export const location = writable<LocationInfo>(null);
 
