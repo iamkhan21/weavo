@@ -1,6 +1,6 @@
 <script>
 import { getCityAndCountry } from '@/domains/location';
-import { location }          from '@stores/location';
+import { location } from '@stores/location';
 </script>
 
 <section>

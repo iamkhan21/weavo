@@ -1,9 +1,7 @@
 export type LocationInfo = {
 	address: {
 		country: string;
-		line_one: string;
-		city: string;
-		postcode: string;
+		place: string;
 	};
 	location: {
 		latitude: number;
@@ -11,7 +9,14 @@ export type LocationInfo = {
 	};
 };
 
+export type RawLocation = {
+	query: number[];
+	features: {
+		context: { id: string; text: string }[];
+	}[];
+};
+
 export function getCityAndCountry(location: LocationInfo) {
 	if (!location) return null;
-	return `${location.address.city}, ${location.address.country}`;
+	return `${location.address.place}, ${location.address.country}`;
 }

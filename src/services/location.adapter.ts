@@ -10,7 +10,7 @@ export function locationAdapter() {
 						reject(error);
 					},
 					{
-						enableHighAccuracy: true,
+						enableHighAccuracy: false,
 						timeout: 15_000
 					}
 				);

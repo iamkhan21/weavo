@@ -6,6 +6,16 @@ export type Weather = {
 	time: string;
 };
 
+export type RawWeather = {
+	current_weather: {
+		weathercode: number;
+		temperature: number;
+		windspeed: number;
+		time: string;
+		winddirection: number;
+	};
+};
+
 const WMOInterpretation = {
 	0: 'Clear sky',
 	1: 'Mainly clear',

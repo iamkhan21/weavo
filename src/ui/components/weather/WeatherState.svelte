@@ -1,6 +1,6 @@
 <script>
 import { getWeatherState } from '@/domains/weather';
-import { weather }         from '@stores/weather';
+import { weather } from '@stores/weather';
 </script>
 
 <section>
