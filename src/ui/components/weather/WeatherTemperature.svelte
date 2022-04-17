@@ -1,18 +1,30 @@
 <script>
-import { getTemperature } from '@/domains/weather';
+import { getActualTemperature, getApparentTemperature } from '@/domains/weather';
 import { weather } from '@stores/weather';
 </script>
 
-<section>
-	<p class="temperature leading-tight">
-		{getTemperature($weather)}<sub class="unit">°C</sub>
+<section class="py-10">
+	<p class="temperature temperature--actual">
+		Currently, it's actually
+		{getActualTemperature($weather)}<sub class="unit">°C</sub>,<br /> but feels like
 	</p>
+	<h2 class="temperature temperature--apparent">
+		{getApparentTemperature($weather)}<sub class="unit">°C</sub>
+	</h2>
 </section>
 
-<style>
+<style lang="postcss">
 .temperature {
-	font-size: 8rem;
-	font-weight: 900;
+	line-height: 1.3;
+
+	&--actual {
+		font-size: 1.6rem;
+		font-weight: 300;
+	}
+
+	&--apparent {
+		font-size: 8rem;
+	}
 }
 
 .unit {

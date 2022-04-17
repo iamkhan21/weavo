@@ -3,6 +3,7 @@ export type Weather = {
 	windspeed: number;
 	weathercode: number;
 	winddirection: number;
+	apparent_temperature: number;
 	time: string;
 };
 
@@ -13,6 +14,10 @@ export type RawWeather = {
 		windspeed: number;
 		time: string;
 		winddirection: number;
+	};
+	hourly: {
+		apparent_temperature: number[];
+		time: string[];
 	};
 };
 
@@ -47,12 +52,47 @@ const WMOInterpretation = {
 	99: 'Thunderstorm with heavy hail'
 };
 
-export function getTemperature(weather: Weather) {
+export function getActualTemperature(weather: Weather) {
 	if (!weather) return null;
 	return weather.temperature;
+}
+
+export function getApparentTemperature(weather: Weather) {
+	if (!weather) return null;
+	return weather.apparent_temperature;
 }
 
 export function getWeatherState(weather: Weather) {
 	if (!weather) return null;
 	return WMOInterpretation[weather.weathercode];
+}
+
+export function getWindSpeed(weather: Weather) {
+	if (!weather) return null;
+	return weather.windspeed;
+}
+
+export function getWindDirection(weather: Weather) {
+	if (!weather) return null;
+
+	const { winddirection } = weather;
+
+	switch (winddirection) {
+		case 0:
+		case 360:
+			return 'north (N)';
+		case 90:
+			return 'east (E)';
+		case 180:
+			return 'south (S)';
+		case 270:
+			return 'west (W)';
+	}
+
+	if (winddirection > 0 && winddirection < 90) return 'northeast (NE)';
+	if (winddirection > 90 && winddirection < 180) return 'southeast (SE)';
+	if (winddirection > 180 && winddirection < 270) return 'southwest (SW)';
+	if (winddirection > 270 && winddirection < 360) return 'northwest (NW)';
+
+	return '-';
 }

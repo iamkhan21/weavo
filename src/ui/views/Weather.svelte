@@ -9,7 +9,7 @@ onMount(() => {
 });
 </script>
 
-<article class="relative">
+<article class="relative overflow-hidden">
 	<WeatherCard />
 	<WeatherLoader />
 </article>
