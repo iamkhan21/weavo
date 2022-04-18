@@ -47,9 +47,13 @@ export async function loadWeatherData() {
 	}
 
 	if (position.status === 'fulfilled') {
-		const data = locationNotChanged
-			? savedCoordinates
-			: geocodingAdapter().convertRawToLocation(position.value as RawLocation);
+		let data;
+		if (locationNotChanged) {
+			data = savedCoordinates;
+		} else {
+			data = geocodingAdapter().convertRawToLocation(position.value as RawLocation);
+			storageAdapter().saveLocation(data);
+		}
 		setLocation(data);
 	} else {
 		console.log(position);
