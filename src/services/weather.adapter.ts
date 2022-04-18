@@ -3,7 +3,10 @@ import type { RawWeather, Weather } from '@domains/weather';
 
 export function weatherAdapter() {
 	return {
-		getCurrentWeather(coordinates: GeolocationCoordinates, timezone: string): Promise<RawWeather> {
+		getCurrentWeather(
+			coordinates: Pick<GeolocationCoordinates, 'longitude' | 'latitude'>,
+			timezone: string
+		): Promise<RawWeather> {
 			const params = new URLSearchParams({
 				longitude: coordinates.longitude.toString(),
 				latitude: coordinates.latitude.toString(),

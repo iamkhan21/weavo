@@ -8,11 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "update:deps": "pnpm up -r -i -L && pnpm i",
+    "update:deps": "pnpm up -i -L && pnpm i",
     "update:cssdb": "npx browserslist@latest --update-db"
   },
   "dependencies": {
     "await-of": "3.1.1",
+    "idb-keyval": "6.1.0",
     "wretch": "1.7.9"
   },
   "devDependencies": {

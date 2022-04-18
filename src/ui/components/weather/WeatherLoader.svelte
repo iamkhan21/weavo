@@ -1,11 +1,14 @@
 <script lang="ts">
 import { weatherLoading } from '@stores/weather';
+import { locationLoading } from '@stores/location';
 </script>
 
-{#if $weatherLoading}
+{#if $weatherLoading || $locationLoading}
 	<section class="backdrop absolute inset-0 flex flex-col items-center justify-center">
 		<span class="loader"></span>
-		<h4 class="mt-8">Receiving weather...</h4>
+		<h4 class="mt-8">
+			Getting {$locationLoading ? 'location' : 'weather'}...
+		</h4>
 	</section>
 {/if}
 
