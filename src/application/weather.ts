@@ -12,7 +12,7 @@ export async function loadWeatherData() {
 	const [coordinates, err1] = await of(locationAdapter().getCurrentPosition());
 	const [savedCoordinates, err2] = await of(storageAdapter().getLocation());
 
-	if ((err1 && err2) || (err1 && savedCoordinates)) {
+	if ((err1 && err2) || (err1 && !savedCoordinates)) {
 		console.log(err1);
 		console.log(err2);
 		setLocationError(`Can't get your location`);
