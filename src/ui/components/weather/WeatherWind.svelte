@@ -4,5 +4,8 @@ import { weather } from '@stores/weather';
 </script>
 
 <section class="py-2">
-	<p>Wind {getWindDirection($weather)} {getWindSpeed($weather)} km/h</p>
+	<p class="font-light text-2xl">
+		Wind {getWindDirection($weather)}
+		{getWindSpeed($weather)}<sub class="unit">km/h</sub>
+	</p>
 </section>

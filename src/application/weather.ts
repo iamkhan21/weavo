@@ -59,5 +59,5 @@ export async function loadWeatherData() {
 		console.log(position);
 	}
 
-	setWeatherLoading(false);
+	setTimeout(() => setWeatherLoading(false), 1_000);
 }

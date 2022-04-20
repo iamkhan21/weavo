@@ -14,6 +14,7 @@
   "dependencies": {
     "await-of": "3.1.1",
     "idb-keyval": "6.1.0",
+    "motion": "^10.7.2",
     "wretch": "1.7.9"
   },
   "devDependencies": {
@@ -34,7 +35,7 @@
     "svelte-preprocess": "4.10.6",
     "tslib": "2.3.1",
     "typescript": "4.6.3",
-    "unocss": "0.31.6",
+    "unocss": "0.31.8",
     "vite": "2.9.5",
     "vite-plugin-pwa": "0.12.0"
   }

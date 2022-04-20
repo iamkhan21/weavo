@@ -4,5 +4,5 @@ import { location } from '@stores/location';
 </script>
 
 <section>
-	<h4>{getCityAndCountry($location)}</h4>
+	<h3>{getCityAndCountry($location)}</h3>
 </section>

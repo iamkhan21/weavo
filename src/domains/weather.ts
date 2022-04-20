@@ -54,12 +54,12 @@ const WMOInterpretation = {
 
 export function getActualTemperature(weather: Weather) {
 	if (!weather) return null;
-	return weather.temperature;
+	return weather.temperature.toFixed(1);
 }
 
 export function getApparentTemperature(weather: Weather) {
 	if (!weather) return null;
-	return weather.apparent_temperature;
+	return weather.apparent_temperature.toFixed(1);
 }
 
 export function getWeatherState(weather: Weather) {
@@ -69,7 +69,7 @@ export function getWeatherState(weather: Weather) {
 
 export function getWindSpeed(weather: Weather) {
 	if (!weather) return null;
-	return weather.windspeed;
+	return weather.windspeed.toFixed(1);
 }
 
 export function getWindDirection(weather: Weather) {
