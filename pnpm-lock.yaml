@@ -6,7 +6,6 @@ specifiers:
   autoprefixer: 10.4.4
   await-of: 3.1.1
   idb-keyval: 6.1.0
-  motion: ^10.7.2
   open-props: 1.3.16
   postcss: 8.4.12
   postcss-import: 14.1.0
@@ -29,7 +28,6 @@ specifiers:
 dependencies:
   await-of: 3.1.1
   idb-keyval: 6.1.0
-  motion: 10.7.2
   wretch: 1.7.9
 
 devDependencies:
@@ -1319,83 +1317,6 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
 
-  /@motionone/animation/10.7.0:
-    resolution: {integrity: sha512-TMsa4i5J6Lhl0CzEJM0umzW/ChTY5tIQ0Xcwi/nqw4OAOnpCoKWb4SDqT8Afx7WZ9+rw1/lZyRbB7ND52ibFPg==}
-    dependencies:
-      '@motionone/easing': 10.7.0
-      '@motionone/types': 10.7.0
-      '@motionone/utils': 10.7.0
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/dom/10.7.2:
-    resolution: {integrity: sha512-+NTuZhYiQ0hZOYP9AsjZxis7Tzjem4RP3ZyMAACOidzdQzuW608KALGGLesRcubO+uabAT5vIbce5xR/+88uPg==}
-    dependencies:
-      '@motionone/animation': 10.7.0
-      '@motionone/generators': 10.7.0
-      '@motionone/types': 10.7.0
-      '@motionone/utils': 10.7.0
-      hey-listen: 1.0.8
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/easing/10.7.0:
-    resolution: {integrity: sha512-FqGcVUel8NnYuXygnJ2KfiIfiySmpXhbTH/0icbRwjqPVVBd5k8+PCCrxJtFYD3LFKBUk2tT3fd01Y/j78+OUw==}
-    dependencies:
-      '@motionone/utils': 10.7.0
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/generators/10.7.0:
-    resolution: {integrity: sha512-l+F5bcszVN3YzMYEKyNE2TKilCe7l4B0BgSyjAvHCs37rXeUoJFv0B+UHAE1NL6iHzQ9s8Z5MUAGqyW/D0ymHQ==}
-    dependencies:
-      '@motionone/types': 10.7.0
-      '@motionone/utils': 10.7.0
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/react/10.7.2:
-    resolution: {integrity: sha512-lCQBTETmEvRSG16CJTl5lHG93VBU/LAb6ZYG4dR/Y/1gTCKdtWdZcCrPs54VKH5mpk0nlxOwDR3Ubkk125re7w==}
-    peerDependencies:
-      react: ^17.0.2
-      react-dom: ^17.0.2
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      '@motionone/dom': 10.7.2
-      hey-listen: 1.0.8
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/svelte/10.7.2:
-    resolution: {integrity: sha512-PRDGL/+s8MAQysF/dQvBVJnOYlAz92+oC7dizI2dXhQ5sCt1HUte1YlWgB81b06lI7UZ9czxK4GzI5FQMFA8Jg==}
-    dependencies:
-      '@motionone/dom': 10.7.2
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/types/10.7.0:
-    resolution: {integrity: sha512-Sb29czMqFj0GckrbfWlrp9/DjaO+mOdORFGqQ7jNCV4pqx/jKHZsRTX7cZrjLPAQJrfEQu02dMcMHZOhsCiBBA==}
-    dev: false
-
-  /@motionone/utils/10.7.0:
-    resolution: {integrity: sha512-p8hAaIYE1JmaeduHhunjLUPFFWk+7MskCLcFTuJGTLVKWkWC6lLjswVV/Himkg2IHOqnbSRgqHb8y3jpIoPuMQ==}
-    dependencies:
-      '@motionone/types': 10.7.0
-      hey-listen: 1.0.8
-      tslib: 2.3.1
-    dev: false
-
-  /@motionone/vue/10.7.2:
-    resolution: {integrity: sha512-SlbehDUJvZfE2YuBkoHp8/a9OpfnNdiGPgB0vh5+OY2wvaArR3UHB5Ogl1CMDH+ti7oJtEabiifaNKTcW1FkLw==}
-    dependencies:
-      '@motionone/dom': 10.7.2
-      tslib: 2.3.1
-    dev: false
-
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -2538,10 +2459,6 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hey-listen/1.0.8:
-    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
-    dev: false
-
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
@@ -2880,19 +2797,6 @@ packages:
     dependencies:
       minimist: 1.2.6
     dev: true
-
-  /motion/10.7.2:
-    resolution: {integrity: sha512-kbUM0K9fEpLeqSnHCMzBxGV27bFN58qkwMFwd6CVKd+g08u1QHs3lt5AFSQvTteq73rrJUAcU+a/o37U+3H17g==}
-    dependencies:
-      '@motionone/animation': 10.7.0
-      '@motionone/dom': 10.7.2
-      '@motionone/react': 10.7.2
-      '@motionone/svelte': 10.7.2
-      '@motionone/vue': 10.7.2
-    transitivePeerDependencies:
-      - react
-      - react-dom
-    dev: false
 
   /mri/1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -3923,6 +3827,7 @@ packages:
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: true
 
   /type-fest/0.16.0:
     resolution: {integrity: sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==}
