@@ -13,6 +13,7 @@ export type RawLocation = {
 	query: number[];
 	features: {
 		context: { id: string; text: string }[];
+		text: string;
 	}[];
 };
 

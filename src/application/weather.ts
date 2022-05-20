@@ -30,7 +30,7 @@ export async function loadWeatherData() {
 
 	const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-	const [weather, position] = await Promise.allSettled([
+    const [weather, position] = await Promise.allSettled([
 		weatherAdapter().getCurrentWeather(point, timezone),
 		locationNotChanged
 			? Promise.resolve(savedCoordinates)
